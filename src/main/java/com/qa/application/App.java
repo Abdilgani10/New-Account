@@ -1,5 +1,9 @@
 package com.qa.application;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 import com.qa.domain.Account;
 import com.qa.service.AccountService;
 import com.qa.util.JSONUtil;
@@ -16,7 +20,9 @@ public class App {
 		service.addAccountFromMap(janeBloggs);
 		String mapAsJSON = util.getJSONForObject(service.getAccountMap());
 		System.out.println("This is the account map as JSON " + mapAsJSON);
-
+		
+		
+		
 	}
 
 }
